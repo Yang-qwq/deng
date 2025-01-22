@@ -1,18 +1,19 @@
 .deng-box {
 	position: fixed;
-	top: -40px;
-	right: -20px;
-	z-index: -1;
+	z-index: 10;
 }
- 
-.deng-box1 {
-	position: fixed;
+
+.deng-box-left {
 	top: -30px;
-	right: 10px;
-	z-index: -1;
+	left: 20px;
 }
- 
-.deng-box1 .deng {
+
+.deng-box-right {
+	top: -30px;
+	right: 20px;
+}
+
+.deng-box .deng {
 	position: relative;
 	width: 120px;
 	height: 90px;
@@ -24,7 +25,7 @@
 	-webkit-animation: swing 5s infinite ease-in-out;
 	box-shadow: -5px 5px 30px 4px rgba(252, 144, 61, 1);
 }
- 
+
 .deng {
 	position: relative;
 	width: 120px;
@@ -37,7 +38,7 @@
 	-webkit-animation: swing 3s infinite ease-in-out;
 	box-shadow: -5px 5px 50px 4px rgba(250, 108, 0, 1);
 }
- 
+
 .deng-a {
 	width: 100px;
 	height: 90px;
@@ -47,7 +48,7 @@
 	border-radius: 50% 50%;
 	border: 2px solid #dc8f03;
 }
- 
+
 .deng-b {
 	width: 45px;
 	height: 90px;
@@ -57,7 +58,7 @@
 	border-radius: 50% 50%;
 	border: 2px solid #dc8f03;
 }
- 
+
 .xian {
 	position: absolute;
 	top: -20px;
@@ -66,7 +67,7 @@
 	height: 20px;
 	background: #dc8f03;
 }
- 
+
 .shui-a {
 	position: relative;
 	width: 5px;
@@ -77,7 +78,7 @@
 	background: #ffa500;
 	border-radius: 0 0 5px 5px;
 }
- 
+
 .shui-b {
 	position: absolute;
 	top: 14px;
@@ -87,7 +88,7 @@
 	background: #dc8f03;
 	border-radius: 50%;
 }
- 
+
 .shui-c {
 	position: absolute;
 	top: 18px;
@@ -97,7 +98,7 @@
 	background: #ffa500;
 	border-radius: 0 0 0 5px;
 }
- 
+
 .deng:before {
 	position: absolute;
 	top: -7px;
@@ -112,7 +113,7 @@
 	background: #ffa500;
 	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
 }
- 
+
 .deng:after {
 	position: absolute;
 	bottom: -7px;
@@ -127,45 +128,45 @@
 	background: #ffa500;
 	background: linear-gradient(to right, #dc8f03, #ffa500, #dc8f03, #ffa500, #dc8f03);
 }
- 
+
 .deng-t {
-	font-family: 华文行楷,Arial,Lucida Grande,Tahoma,sans-serif;
+	font-family: 华文行楷, Arial, Lucida Grande, Tahoma, sans-serif;
 	font-size: 3.2rem;
 	color: #dc8f03;
 	font-weight: bold;
 	line-height: 85px;
 	text-align: center;
 }
- 
-.night .deng-t, 
-.night .deng-box, 
-.night .deng-box1 {
+
+.night .deng-t,
+.night .deng-box,
+.night {
 	background: transparent !important;
 }
- 
+
 @-moz-keyframes swing {
 	0% {
 		-moz-transform: rotate(-10deg)
 	}
- 
+
 	50% {
 		-moz-transform: rotate(10deg)
 	}
- 
+
 	100% {
 		-moz-transform: rotate(-10deg)
 	}
 }
- 
+
 @-webkit-keyframes swing {
 	0% {
 		-webkit-transform: rotate(-10deg)
 	}
- 
+
 	50% {
 		-webkit-transform: rotate(10deg)
 	}
- 
+
 	100% {
 		-webkit-transform: rotate(-10deg)
 	}
